@@ -5,91 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <title>Bootstrap Exercice</title>
+    <title>Exercice bootstrap</title>
 </head>
-<body>
-    <div class="container row">
-    <div id="carouselExampleCaptions" class="carousel slide col-12 col-xl-6 m-auto" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://picsum.photos/600/300" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/600/300" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/600/300" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+<body class="bg-primary bg-opacity-10">
+    <header class="border border-5 border-secondary m-5  p-3 bg-primary text-secondary bg-opacity-10">
+      <div class="row align-items-center">
+        <img class="col-12 d-block d-md-none d-xl-block col-xl-3" src="https://picsum.photos/200/200" alt="">
+        <h1 class="col-9 d-none d-md-block text-end">Site de démonstration</h1>
       </div>
-      <div class="text-center col-12 col-xl-12">Exercice bootstrap</div>
-
-        <div class="row align-items-start">
-          <div class="col-xl-6 col-sm-12  border border-5 col-md-12">
-            <div class="row align-items-start">
-                <div class="col-xl-4 col-sm-12 col-md-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque dolorum asperiores illo sint eaque at reiciendis beatae fuga aperiam voluptatem eveniet unde esse harum, omnis doloribus explicabo nobis recusandae, nemo aliquid illum molestias? Distinctio impedit nesciunt animi recusandae repellendus, veritatis eligendi labore soluta aperiam. Iusto voluptatibus neque nostrum esse?</p>
+<!--------------------------   Nav Bar   ---------------------------------->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Carte du site</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+<!-------------------------------------- Menu burger ---------------------------->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catégories
+                </a>
+<!------------------------------ Dropdown ----------------------------->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Minéral</a></li>
+                  <li><a class="dropdown-item" href="#">Animal</a></li>
+<!----------------------------- Barre de séparation -------------------------------->
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Végétal</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="condition_generale.html">Conditions générales</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Recherche</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <main class="container row border border-5 border-secondary p-3 bg-primary bg-opacity-10 col-10 m-auto mt-5">
+<!------------------------  Carroussel --------------------------------------------->
+        <div id="carouselExampleCaptions" class="carousel slide col-12 col-xl-6 m-auto" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/600/300" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/600/300" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
                 </div>
-                <div class="col-xl-4 col-sm-12 col-md-6">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam voluptatibus voluptates recusandae obcaecati mollitia commodi minus cum et voluptatem fuga natus quidem cumque expedita facilis quod incidunt, explicabo similique veniam, soluta corporis! Earum tempora nobis natus eius quia pariatur a, modi, sequi omnis itaque fuga porro aut quos incidunt et!</p>
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/600/300" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
                 </div>
-                <div class="col-xl-4 col-sm-12 col-md-6">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, magni labore recusandae veritatis reiciendis illum error explicabo quae consectetur? Harum, inventore tempore voluptate totam eaque aliquam qui atque asperiores quidem! Cupiditate perferendis laboriosam laudantium possimus odio doloribus ullam delectus optio quasi! Possimus error corporis consectetur, tempore vitae vel laboriosam quod.</p>
-                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    <!-- div.container>h1+div>p*3+div>img[src="https://picsum.photos/200/300" alt=""] -->
+    <div class="container row">
+        <h1 class="text-center">Hello world !</h1>
+        <div class="row col-12 col-xl-6">
+            <p class="col-12 col-md-6 col-xl-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus maxime iste perferendis placeat doloremque tempore quos est illo. Nobis, voluptatibus.</p>
+            <p class="col-12 col-md-6 col-xl-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste iusto incidunt, atque alias minima impedit possimus dolorum quibusdam ad aliquam labore vitae molestias sunt tempore sed, nesciunt quos quod obcaecati?</p>
+            <p class="col-12 col-md-6 col-xl-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorum iure repudiandae nostrum mollitia rerum dolores ab, atque deleniti cum eaque commodi earum inventore velit explicabo excepturi distinctio odit. Ducimus nisi eum pariatur quasi facere voluptatum saepe, natus animi temporibus.</p>
+        </div>
+            <div class="row col-12 col-xl-6 g-1 alert alert-primary">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
+                <img class="col-6 col-md-3 col-xl-4" src="https://picsum.photos/200/300" alt="">
             </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-xl-6">
-            <div class="row align-items-start">
-                <div class="col-md-12 col-xl-12 col-sm-12 mt-1" style="margin-top: 2em; margin-bottom: 2em;">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <img src="https://picsum.photos/200/200" alt="">
-                </div>
-            </div>               
-    </div>
-</div>
+      </main>
 </body>
+<footer>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </html>
